@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Heidelberger Energieberater GbR | Zertifizierte Energieberatung</title>
+    <title>Heidelberger Energieberater GbR | Zertifizierte Energieberatung & BAFA</title>
     <meta name="description" content="Zertifizierte Energieberatung für Wohn- & Nichtwohngebäude in Heidelberg. Fördermittel, iSFP & Energieausweise. Jetzt kostenlose Erstberatung sichern." />
+    <meta name="robots" content="index, follow" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -14,6 +15,11 @@
       /* Smooth scrolling */
       html {
         scroll-behavior: smooth;
+      }
+      /* Focus visible styles for accessibility */
+      :focus-visible {
+        outline: 2px solid #059669;
+        outline-offset: 2px;
       }
     </style>
   <script type="importmap">
@@ -27,6 +33,41 @@
     "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
     "react-hook-form": "https://esm.sh/react-hook-form@^7.70.0"
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Heidelberger Energieberater GbR",
+  "image": "https://heidelberger-energieberater.de/wp-content/uploads/2022/10/Johannes-Buettner-Energieberater-Heidelberg.jpg",
+  "telephone": "06221 782020",
+  "email": "info@heidelberger-energieberater.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Schwetzinger Straße 51",
+    "addressLocality": "Heidelberg-Kirchheim",
+    "postalCode": "69124",
+    "addressCountry": "DE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.3876,
+    "longitude": 8.6647
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "08:00",
+    "closes": "18:00"
+  },
+  "priceRange": "$$"
 }
 </script>
 <link rel="stylesheet" href="/index.css">
